@@ -2,15 +2,15 @@ main{
     max-width: 840px;
 }
 aside{
-    width: 20rem;
-    margin: 1rem;
-    padding: 1rem;
-    background-color:#eee ;
-    color: #333;
-    text-align: center;
-    border: 1px solid rgb(0, 0, 0 / 0.1);
+   width: 20rem;
+   margin: 1rem;
+   border: 1px solid rgba(0 0 0 / 0.2);
+   padding: 1rm;
+   background-color: #eee;
+   color: #333;
+   text-align: center;
 }
-aside, img{
+aside img{
     width: 200px;
     height: auto;
 }
@@ -23,6 +23,6 @@ p{
 }
 footer{
     margin-top:15px ;
-    border-top: 1 px solid #000;
+    border-top: 1px solid #000;
     text-align: center;
 }
