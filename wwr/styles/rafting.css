@@ -1,0 +1,100 @@
+:root{
+    --primary-color: #055a05;
+    --secondary-color: #f4a261;
+    --accent1-color: #264653;
+    --accent2-color: #e9c46a;
+    --heading-font: merriweather, sans-serif;
+    --body-font:lato, sans-serif;
+}
+header{
+    background-color: #fff;
+    color: var(--accent2-color);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: var(--body-font);
+    color: var(--accent1-color);
+}
+
+header, main, footer{
+    width: 840px;
+    margin: 0 auto;
+}
+h1, h2{
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+nav, P, section, article {
+    margin: 16px;
+    padding: 8px;
+}
+.socialmediaa {
+    text-decoration: none;
+}
+.hero {
+    position: relative;
+}
+.hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+h1{
+    position: absolute;
+    top: 20px;
+    width:100%;
+    padding: 16px;
+    text-align: center;
+    opacity:0.7;
+    background-color: var(--accent1-color);
+    color: #fff;
+}
+.hero article img{
+    float: right;
+    width: 125px;
+}
+
+.hero {
+  position: relative;
+  background-size:r;
+  background-position: center;
+  height: 100vh;  /* Set the hero image to fill the screen height */
+}
+
+/* Style for the Title (h1) */
+.hero h1 {
+  position: absolute;
+  top: 20%;  /* Position it near the top of the screen */
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 3em;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  z-index: 1;  /* Ensure it appears above the image */
+}
+
+/* Style for the Article Section */
+article {
+  position: absolute;
+  top: 40%;  
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  color: white;
+  z-index: 1;
+  text-align: center; 
+  background-color: rgba(0, 0, 0, 0.3); 
+}
+
+h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+
