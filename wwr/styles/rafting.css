@@ -45,24 +45,14 @@ nav, P, section, article {
     height: auto;
     display: block;
 }
-h1{
-    position: absolute;
-    top: 20px;
-    width:100%;
-    padding: 16px;
-    text-align: center;
-    opacity:0.7;
-    background-color: var(--accent1-color);
-    color: #fff;
-}
 .hero article img{
     float: right;
     width: 125px;
+    height: 100px;
 }
 
 .hero {
   position: relative;
-  background-size:r;
   background-position: center;
   height: 100vh;  /* Set the hero image to fill the screen height */
 }
@@ -70,31 +60,69 @@ h1{
 /* Style for the Title (h1) */
 .hero h1 {
   position: absolute;
-  top: 20%;  /* Position it near the top of the screen */
+  top: 20px;  /* Position it near the top of the screen */
+  width: 100%;
+  padding: 16px;
+  text-align: center;
+  opacity: 0.7;
+  background-color: var(--accent1-color);
+  color: #fff;
   left: 50%;
   transform: translateX(-50%);
-  font-size: 3em;
-  color: white;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  z-index: 1;  /* Ensure it appears above the image */
+
+  /* z-index: 1;  Ensure it appears above the image */
 }
 
 /* Style for the Article Section */
 article {
   position: absolute;
-  top: 40%;  
+  top: 20%;  
   left: 50%;
   transform: translateX(-50%);
   width: 80%;
-  color: white;
+  color: wheat;
   z-index: 1;
   text-align: center; 
-  background-color: rgba(0, 0, 0, 0.3); 
+  background-color: rgba(1, 0, 0, 0.3); 
 }
 
 h2 {
   font-size: 2em;
   margin-bottom: 10px;
 }
+
+/* additional styling for the footer section*/
+footer {
+    background-color: #dadce0;
+    color: #4d5156;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 14px;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+.socialmedia {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 5px;
+}
+
+.socialmedia a i {
+    font-size: 16px;
+    color: #fff;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+}
+.socialmedia a i:hover {
+    opacity: 1;
+    color: #1da1f2;     /* Slight Twitter-blue hover effect */
+}
+
+
+
 
 
