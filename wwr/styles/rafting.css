@@ -3,8 +3,8 @@
   --secondary-color: #f4a261;
   --accent1-color: #264653;
   --accent2-color: #e9c46a;
-  --heading-font: merriweather, sans-serif;
-  --body-font: lato, sans-serif;
+  --heading-font: 'Merriweather', sans-serif;
+  --body-font: 'Lato', sans-serif;
 }
 
 * {
@@ -20,22 +20,55 @@ body {
 
 header, main, footer {
   max-width: 840px;
-  width: 100%;
   margin: 0 auto;
   padding: 0 1rem;
-  background-color: #fff;
 }
 
+/* Header Styles */
+header {
+  background-color: #fff;
+  color: var(--accent2-color);
+}
+
+nav {
+  background-color: #f4f4f4;
+  padding: 10px;
+  text-align: center;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  margin: 0 10px;
+  font-weight: bold;
+}
+
+/* Typography */
 h1, h2 {
   font-family: var(--heading-font);
-  color: #fff
+  color: var(--primary-color);
+  text-align: center;
 }
 
-nav, p, section, article {
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+p, section, article, nav {
   margin: 16px;
   padding: 8px;
 }
 
+p {
+  padding: 0;
+}
+
+/* Hero Section */
 .hero {
   position: relative;
   background-position: center;
@@ -48,50 +81,78 @@ nav, p, section, article {
   display: block;
 }
 
-.hero article img {
-  float: right;
-  width: 125px;
-  height: 100px;
-}
-
 .hero h1 {
   position: absolute;
   top: 20px;
   width: 100%;
   padding: 16px;
   text-align: center;
-  background-color: hsla(120, 79%, 47%, 0.148);
-
-  color: #fff;
   opacity: 0.7;
-  transform: translateX(-50%);
+  background-color: var(--accent1-color);
+  color: #fff;
   left: 50%;
+  transform: translateX(-50%);
 }
 
-article {
+.hero article {
   position: absolute;
   top: 20%;
   left: 50%;
   transform: translateX(-50%);
   width: 80%;
-  color: #fff;
-  background-color: rgba(1, 0, 0, 0.500);
-  text-align: center;
+  color: wheat;
   z-index: 1;
+  text-align: center;
+  background-color: rgba(1, 0, 0, 0.3);
 }
 
+.hero article img {
+  float: right;
+  width: 125px;
+  height: 100px;
+}
+
+/* Images */
+main img,
+aside img {
+  height: auto;
+}
+
+main img {
+  width: 150px;
+}
+
+aside img {
+  width: 200px;
+}
+
+/* Aside */
+aside {
+  width: 20rem;
+  margin: 1rem;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 1rem;
+  background-color: #eee;
+  color: #333;
+  text-align: center;
+}
+
+/* Footer */
 footer {
   background-color: #dadce0;
   color: #4d5156;
   padding: 10px 20px;
   text-align: center;
   font-size: 14px;
+  border-top: 1px solid #000;
+  margin-top: 15px;
 }
 
 footer p {
   margin: 5px 0;
 }
 
+/* Social Media */
 .socialmedia {
   display: flex;
   justify-content: center;
