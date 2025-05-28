@@ -43,7 +43,6 @@ nav a {
   font-weight: bold;
 }
 
-/* Typography */
 h1, h2 {
   font-family: var(--heading-font);
   color: var(--primary-color);
@@ -139,7 +138,6 @@ aside {
 
 /* Footer */
 footer {
-  background-color: #dadce0;
   color: #4d5156;
   padding: 10px 20px;
   text-align: center;
@@ -162,7 +160,7 @@ footer p {
 
 .socialmedia a i {
   font-size: 16px;
-  color: #fff;
+  color: #333;
   opacity: 0.8;
   transition: opacity 0.3s ease;
 }
