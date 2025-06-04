@@ -118,26 +118,6 @@ footer p {
   margin: 5px 0;
 }
 
-/* Social Media */
-.socialmedia {
-  display: flex;
-  justify-content: flex-end;
-  gap: 12px;
-  margin-top: 5px;
-}
-
-.socialmedia a i {
-  font-size: 16px;
-  color: #333;
-  opacity: 0.8;
-  transition: opacity 0.3s ease;
-}
-
-.socialmedia a i:hover {
-  opacity: 1;
-  color: #1da1f2;
-}
-
 /* History Section */
 .history-container {
   display: flex;
@@ -184,4 +164,170 @@ footer p {
   margin-top: 0.5rem;
   font-size: 0.9rem;
   color: #333;
+}
+
+/* Team Section */
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  padding: 1rem;
+  justify-items: center;
+  text-align: center;
+}
+
+.team-grid figure {
+  margin: 0;
+}
+
+.team-grid img {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.team-grid figcaption {
+  margin-top: 0.5rem;
+  font-size: 0.95rem;
+  color: #333;
+  font-weight: bold;
+}
+
+/* form styling  */
+/* Contact Form - Flexbox Layout */
+/* Contact Info Section */
+.contact-info p {
+  margin-bottom: 8px;
+  font-size: 1rem;
+  color: #222;
+}
+
+/* Form Section */
+
+/* Form Container */
+form {
+  background-color: #fdfdfd;
+  padding: 1.5rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  max-width: 600px;
+  margin: 2rem auto;
+}
+
+/* Form Table */
+form table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+/* Form Labels & Inputs */
+form label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 6px;
+  color: #264653;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="tel"],
+form textarea,
+form select {
+  width: 100%;
+  padding: 0.6rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  background-color: #fff;
+  color: #333;
+}
+
+/* Radio Buttons */
+.radio-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.radio-group label {
+  font-weight: normal;
+  color: #333;
+}
+
+/* Checkbox */
+.checkbox-group {;
+  margin-bottom: 1.5rem;
+}
+
+.checkbox-group label {
+  display: inline-block;
+  margin-left: 0.5rem;
+  color: #333;
+}
+
+/* Submit Button */
+input[type="submit"] {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+  background-color: #037a03;
+}
+
+/* Centering Utility */
+.center {
+  text-align: center;
+}
+
+/* Map Embed */
+.map {
+  background-color: rgba(0, 0, 0, 0.046);
+  margin-top: 1rem;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.map iframe {
+  width: 100%;
+  height: 220px;
+  border: none;
+}
+.social-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.social-link:hover {
+  transform: scale(1.1);
+  opacity: 1;
+}
+
+.social-icon {
+  width: 24px;
+  height: 24px;
+  fill: #333;
+  opacity: 0.8;
+  transition: fill 0.3s ease, opacity 0.3s ease;
+}
+
+.social-link:hover .social-icon {
+  fill: #1da1f2; /* or individual brand colors */
+  opacity: 1;
 }
