@@ -14,7 +14,8 @@
 <body>
      <header>
           <img src="images/rafting-logo.jpg" alt="Rafting Adventures Logo" />
-          <h1>Rafting Adventures Co.</h1>
+              <h1>Explore Our Rafting Trips</h1>
+                 <p>Choose your adventure – thrilling, scenic, or family fun!</p>
           <nav>
           <ul>
             <li><a href="index.html">Home</a></li>
@@ -24,53 +25,115 @@
           </ul>
           </nav>
       </header>
+       <main class="trips-container">
 
-    <main>
-    <!-- Hero Section -->
-    <section class="hero">
-      <img src="images/backgr.jpg" alt="Rafting on a wild river" class="hero-img" />
-      <div class="hero-text">
-        <h2>Adventure Begins Where the Road Ends</h2>
-        <p>Discover the thrill of white water rafting with us today!</p>
+    <section class="trip-section">
+         <div class="gallery">
+            <figure>
+            <img src="images/dsss.jpeg" alt="Rafting group in rapids" />
+             <figcaption>The Big Thrills</figcaption>
+            </figure>
+      <div class="trip-description">
+        <h2>Half-Day Rapids Adventure</h2>
+        <p>
+          Experience the thrill in a short burst! Our half-day adventure is perfect for beginners and families seeking excitement without a long time commitment. Navigate Class II–III rapids with our expert guides while enjoying the lush riverside scenery.
+        </p>
       </div>
     </section>
 
-    <!-- Call to Action -->
-    <section class="cta content-block">
-      <h2>Ready for Your Next Adventure?</h2>
-      <p>Explore our range of guided rafting trips for all experience levels.</p>
-      <a href="trips.html" class="btn">View Our Trips</a>
-    </section>
-
-    <!-- Grid Layout Section -->
-    <section class="grid-content content-block">
-      <div class="grid-item">
-        <img src="images/authentic.jpg" alt="Rafting Group" />
-        <h3>Unforgettable Experiences</h3>
-        <p>Whether you're a beginner or a seasoned rafter, we offer trips designed to exhilarate, inspire, and challenge you.</p>
-      </div>
-      <div class="grid-item">
-        <img src="images/Emilie-Lederer.jpg"White Water Rapids" />
-        <h3>Beautiful Locations</h3>
-        <p>Navigate the most scenic rivers and rapids in the region, surrounded by breathtaking natural beauty.</p>
+    <section class="trip-section">
+         <div class="gallery">
+            <figure>
+            <img src="images/des.jpeg" alt="Rafting group in rapids" />
+             <figcaption>Half-Day Thrills</figcaption>
+            </figure>
+      <div class="trip-description">
+        <h2>Full-Day Canyon Expedition</h2>
+        <p>
+          Ready for a full day of adrenaline? The Canyon Expedition takes you through a series of thrilling Class III–IV rapids, with a scenic lunch break at a secluded beach. Great for adventurers looking to immerse themselves in nature and excitement.
+        </p>
       </div>
     </section>
 
-    <!-- Newsletter Sign Up -->
-    <section class="newsletter content-block">
-      <h2>Join Our Adventure Community</h2>
-      <p>Sign up for our newsletter to receive exclusive trip offers, tips, and stories from the river.</p>
-      <form action="subscribe.html" method="post" class="newsletter-form">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required />
+    <section class="trip-section">
+            <div class="gallery">
+            <figure>
+            <img src="images/seaa.jpeg" alt="Rafting group in rapids" />
+             <figcaption>Planing The Day</figcaption>
+            </figure>
+      <div class="trip-description">
+        <h2>Multi-Day Wild River Journey</h2>
+        <p>
+          Our ultimate rafting experience! Spend 2–3 days on the river with overnight camping, gourmet meals, and unforgettable stargazing. Paddle through Class IV rapids and explore remote natural beauty with expert safety and guidance.
+        </p>
+      </div>
+     </div>
+    </section>
 
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required />
+    <section class="trip-section">
+      <h2>Trip Highlights</h2>
+      <div class="gallery">
+        <figure>
+          <img src="images/ca.jpg" alt="Rafting group in rapids" />
+          <figcaption>Half-Day Thrills</figcaption>
+        </figure>
+        <figure>
+          <img src="images/camping.avif" alt="Rafting through canyon" />
+          <figcaption>Canyon Expedition</figcaption>
+        </figure>
+        <figure>
+          <img src="images/cam.jpeg" alt="Camping by river" />
+          <figcaption>Overnight Camp</figcaption>
+        </figure>
+      </div>
+    </section>
 
-        <button type="submit">Subscribe</button>
-      </form>
+    <section class="trip-table-section">
+      <h2>Compare Our Trips</h2>
+      <table class="trip-table">
+        <thead>
+          <tr>
+            <th>Trip</th>
+            <th>Duration</th>
+            <th>Difficulty</th>
+            <th>Meals Included</th>
+            <th>Price</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td data-label="Trip">Half-Day Rapids</td>
+            <td data-label="Duration">4 hours</td>
+            <td data-label="Difficulty">Moderate (Class II–III)</td>
+            <td data-label="Meals Included">Snacks</td>
+            <td data-label="Price">$85</td>
+          </tr>
+          <tr>
+            <td data-label="Trip">Full-Day Canyon</td>
+            <td data-label="Duration">8 hours</td>
+            <td data-label="Difficulty">Challenging (Class III–IV)</td>
+            <td data-label="Meals Included">Lunch</td>
+            <td data-label="Price">$150</td>
+          </tr>
+          <tr>
+            <td data-label="Trip">Wild River Journey</td>
+            <td data-label="Duration">2–3 days</td>
+            <td data-label="Difficulty">Advanced (Class IV)</td>
+            <td data-label="Meals Included">All Meals</td>
+            <td data-label="Price">$450</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="contact-cta">
+      <h2>Ready to Book Your Adventure?</h2>
+      <p>Contact us now to reserve your spot and experience the wild side of nature.</p>
+      <a href="contact.html">Contact Us</a>
     </section>
   </main>
+ 
+
 
   <footer class="container">
     <p>&copy; 2025 Rafting Adventures Co. | Michael Attah | WDD 130</p>
@@ -89,6 +152,5 @@
     </a>
     </div>
   </footer>
-
 </body>
 </html>
