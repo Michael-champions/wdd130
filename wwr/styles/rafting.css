@@ -922,3 +922,7 @@ footer p {
     padding: 0.5rem 1rem;
     font-size: 0.9rem;
   }
+  .history-container img {
+    flex: 1 1 300px;
+    border-radius: 8px;
+  }
